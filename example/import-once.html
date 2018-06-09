@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Defer example</title>
+</head>
+
+<body>
+  <script type="module" src="./modules/module1.js"></script>
+  <script type="module" src="./modules/module1.js"></script>
+  <script type="module" src="./modules/module1.js?a=1"></script>
+  <script type="module">
+    import * as module1 from './modules/module1.js'
+  </script>
+</body>
+
+</html>
