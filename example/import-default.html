@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Import Index Example</title>
+</head>
+
+<body>
+  <script type="module">
+    import defaultItem from './import/module.js'
+    import { default as defaultItem2 } from './import/module.js'
+    import _, { default as defaultItem3 } from './import/module.js'
+
+    console.log(defaultItem === defaultItem2)
+    console.log(defaultItem === defaultItem3)
+  </script>
+</body>
+
+</html>
