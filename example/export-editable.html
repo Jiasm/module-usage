@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Import Index Example</title>
+</head>
+
+<body>
+  <script type="module">
+    import * as results from './export-editable.js'
+
+    console.log(results.firstName)
+
+    // results.firstName = 'Bellic' // error
+
+    results.packs.push(3)
+
+    console.log(results.packs)
+
+    console.log(results.letVal)
+  </script>
+</body>
+
+</html>
